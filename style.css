@@ -1,21 +1,11 @@
-@font-face {
-    font-family: 'IA Writer';
-    src: url('/assets/type/iAWriter.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
     --gap: 2rem;
-    --font: system-ui, sans-serif;
     --body-font-size: clamp(1.115rem,3vw,1.25rem);
     --line-height: 1.5;
     --primary-color: #161718;
     --highlight-color: #009700;
     --background-color: #FBFAF7;
 }
-
 
 @media(prefers-color-scheme:dark) {
     :root {
@@ -55,7 +45,7 @@ body {
     min-height: 100dvh;
     margin: unset;
     padding: clamp(2rem,6vw,4rem) clamp(1rem,3vw,10rem);
-    font-family: var(--font);
+    font-family: system-ui, sans-serif;
     font-size: var(--body-font-size);
     font-weight: 400;
     font-style: normal;
@@ -90,7 +80,7 @@ body {
 }
 
 .datetime-text {
-    font-family: 'IA Writer';
+    font-family: monospace;
 }
 
 h1 {
