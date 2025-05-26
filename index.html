@@ -24,15 +24,13 @@
         <meta property="og:image:height" content="630">
     </head>
     <body>
-        <div class="acme-all-purpose-wrapper">
-            <main tab-index="-1">
-                <h1>Is Marjorie Taylor Greene still alive?</h1>
-                <div class="message-container margins-off">
-                    <div id="message" class="message-text"></div>
-                    <div id="datetime" class="datetime-text"></div>
-                </div>
-            </main>
-        </div>
+        <main tab-index="-1">
+            <h1>Is Marjorie Taylor Greene still alive?</h1>
+            <div class="message-container margins-off">
+                <div id="message" class="message-text"></div>
+                <div id="datetime" class="datetime-text"></div>
+            </div>
+        </main>
         <script>window.addEventListener('DOMContentLoaded',()=>{const messageEl=document.getElementById('message');const dateTimeEl=document.getElementById('datetime');messageEl.textContent="Yes";const now=new Date();const formatted=now.toLocaleString();dateTimeEl.textContent=formatted});</script>
         <script type="application/ld+json">
             {
