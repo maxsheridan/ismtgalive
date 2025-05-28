@@ -1,6 +1,6 @@
 :root {
-    --gap: 2rem;
-    --body-font-size: clamp(.9rem,4.2vw,1.25rem);
+    --gap: clamp(1.25rem,5vw,3rem);
+    --body-font-size: clamp(1rem,2.1vw,1.25rem);
     --line-height: 1.5;
     --primary-color: #161718;
     --highlight-color: #009700;
@@ -63,9 +63,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: var(--gap);
+    gap: calc(var(--gap) * .75);
     max-width: fit-content;
-    margin: calc(var(--gap) * 1.5) auto 0;
+    margin: var(--gap) auto 0;
     font-size: var(--body-font-size);
 }
 
