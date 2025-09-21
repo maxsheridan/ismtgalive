@@ -1,7 +1,6 @@
 :root {
-    --gap: clamp(1.25rem,5vw,3rem);
-    --body-font-size: clamp(1rem,2.1vw,1.25rem);
-    --line-height: 1.5;
+    --gap: calc(2rem + 1vw);
+    --body-font-size: calc(.8rem + .7vw);
     --primary-color: #161718;
     --highlight-color: #009700;
     --link-color: #8D8C8C;
@@ -46,14 +45,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    min-height: 100vh;
     min-height: 100dvh;
     margin: unset;
-    padding: clamp(2rem,6vw,4rem) clamp(1rem,3vw,10rem);
+    padding: 3rem 1rem;
     font-family: system-ui, sans-serif;
     font-size: var(--body-font-size);
     font-weight: 400;
     font-style: normal;
-    line-height: var(--line-height);
+    line-height: 1.5;
     text-align: center;
     color: var(--primary-color);
     background-color: var(--background-color);
@@ -63,8 +63,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: calc(var(--gap) * .75);
-    max-width: fit-content;
+    max-width: 32ch;
+    max-width: max-content;
     margin: var(--gap) auto 0;
     font-size: var(--body-font-size);
 }
@@ -81,13 +81,17 @@ body {
 }
 
 h1 {
-    font-size: clamp(1rem,5vw,3rem);
+    font-size: calc(1rem + 1.5vw);
     font-weight: bold;
     line-height: 1.2;
 }
 
 .green {
     color: var(--highlight-color);
+}
+
+.spacer {
+    width: 2rem;
 }
 
 a {
@@ -100,6 +104,10 @@ a {
     pointer-events: auto;
     cursor: pointer;
     transition: background-color .3s ease;
+}
+
+a:hover {
+    opacity: .6;
 }
 
 @media (hover:hover) and (pointer:fine) {
