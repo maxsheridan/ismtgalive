@@ -1,7 +1,7 @@
 
 :root {
     --gap: calc(2rem + 1vw);
-    --base: calc(1.13rem + .6vw);
+    --base: calc(1.19rem + .5vw);
     --text-padding: .75rem 1rem;
     --primary: #161718;
     --highlight: #28A745;
@@ -41,7 +41,7 @@ body {
     min-height: 100dvh;
     padding: 1rem 1.5rem;
     font-family: system-ui, sans-serif;
-    font-size: calc(var(--base) * .75);
+    font-size: calc(var(--base) * .8);
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
