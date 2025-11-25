@@ -69,7 +69,7 @@ main {
     width: 100%;
     max-width: 73rem;
     margin: 0 auto;
-    padding: 0 1.25rem 1.25rem;
+    padding: 0 1.25rem 1.5rem;
 }
 
 main > div + div {
@@ -99,6 +99,7 @@ h1 {
 .status-bar {
     width: 100%;
     padding: .5rem 1rem;
+    margin-block-start: -1.5rem;
     border-radius: .25rem;
     border: 1px solid var(--border);
     box-shadow: 0 0.25rem 0.75rem  var(--shadow);
@@ -123,6 +124,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .status-bar {
+        margin-block-start: unset;
+    }
+
     .status-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -261,7 +266,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-block-start: 1.75rem;
+    margin-block-start: 3rem;
     color: #515151;
 }
 
