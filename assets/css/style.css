@@ -157,7 +157,8 @@ h1 {
 }
 
 .micro {
-    font-size: calc(var(--base) * .7);
+    margin-block-start: 1rem;
+    font-size: calc(var(--base) * .75);
 }
 
 .check {
@@ -168,7 +169,7 @@ h1 {
 
 .circle-check {
     width: auto;
-    height: calc(14px + .35vw);
+    height: calc(16px + .15vw);
 }
 
 .incident-report {
