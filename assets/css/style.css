@@ -1,7 +1,7 @@
 
 :root {
     --small-gap: .5rem;
-    --gap: calc(2rem + 1vw);
+    --gap: calc(2rem + .8vw);
     --base: calc(1.13rem + .4vw);
     --text-padding: .75rem 1rem;
     --primary: #161718;
