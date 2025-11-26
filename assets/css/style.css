@@ -2,7 +2,7 @@
 :root {
     --small-gap: .5rem;
     --gap: calc(2rem + 1vw);
-    --base: calc(1.13rem + .48vw);
+    --base: calc(1.13rem + .4vw);
     --text-padding: .75rem 1rem;
     --primary: #161718;
     --highlight: #28A745;
@@ -53,7 +53,7 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     font-family: system-ui, sans-serif;
-    font-size: calc(var(--base) * .8);
+    font-size: calc(var(--base) * .85);
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
@@ -162,13 +162,13 @@ h1 {
 
 .check {
     width: auto;
-    height: calc(9px + .5vw);
+    height: calc(12px + .35vw);
     margin-right: 4px;
 }
 
 .circle-check {
     width: auto;
-    height: calc(12px + .5vw);
+    height: calc(14px + .35vw);
 }
 
 .incident-report {
