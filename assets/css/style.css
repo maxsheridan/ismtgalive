@@ -157,7 +157,7 @@ h1 {
 }
 
 .micro {
-    font-size: calc(var(--base) * .65);
+    font-size: calc(var(--base) * .7);
 }
 
 .check {
