@@ -226,7 +226,8 @@ h1 {
 }
 
 .tooltip svg {
-    height: calc(10.5px + .5vw);
+    width: auto;
+    height: calc(13px + .2vw);
     margin-bottom: -1px;
 }
 
