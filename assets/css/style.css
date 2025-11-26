@@ -96,6 +96,25 @@ h1 {
     line-height: 1.2;
 }
 
+svg {
+    width: 1em;
+    height: auto;
+}
+
+svg.smaller {
+    width: .9em;
+    height: auto;
+}
+
+svg.margin-right {
+    margin-right: 4px;
+}
+
+svg.margin-left {
+    margin-left: 4px;
+}
+
+
 .status-bar {
     width: 100%;
     padding: .5rem 1rem;
@@ -161,17 +180,6 @@ h1 {
     font-size: calc(var(--base) * .75);
 }
 
-.check {
-    width: auto;
-    height: calc(12px + .35vw);
-    margin-right: 4px;
-}
-
-.circle-check {
-    width: auto;
-    height: calc(16px + .15vw);
-}
-
 .incident-report {
     flex-wrap: wrap;
     align-items: stretch;
@@ -202,13 +210,6 @@ h1 {
     }
 }
 
-.incident-report svg {
-    height: calc(12px + .5vw);
-    margin-bottom: -1px;
-    margin-right: 6px;
-    cursor: pointer;
-}
-
 .tooltip {
     display: flex;
     align-items: center;
@@ -221,14 +222,12 @@ h1 {
 }
 
 .tooltip button {
-    margin-left: 6px;
+    font-size: inherit;
     cursor: pointer;
 }
 
-.tooltip svg {
-    width: auto;
-    height: calc(13px + .2vw);
-    margin-bottom: -1px;
+.tooltip-trigger svg {
+    margin-bottom: -1px
 }
 
 .tooltip-content {
@@ -275,12 +274,6 @@ footer {
 footer a {
     text-decoration: none;
     color: #515151;
-}
-
-#weird-bubba {
-    width: auto;
-    height: calc(16px + .5vw);
-    margin-right: 4px;
 }
 
 a {
