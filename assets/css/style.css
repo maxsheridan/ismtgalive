@@ -101,19 +101,23 @@ svg {
     height: auto;
 }
 
-svg.smaller {
+svg.shrink {
     width: .9em;
     height: auto;
 }
 
-svg.margin-right {
+.icon-with-text-right {
     margin-right: 4px;
 }
 
-svg.margin-left {
+.icon-with-text-left {
     margin-left: 4px;
 }
 
+#weird-bubba {
+    width: 1.25em;
+    height: auto;
+}
 
 .status-bar {
     width: 100%;
@@ -312,4 +316,8 @@ body.utility main {
     align-items: center;
     min-height: 100vh;
     min-height: 100dvh;
+}
+
+body.utility main * + * {
+    margin-block-start: 2rem;
 }
